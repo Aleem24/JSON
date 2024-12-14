@@ -22,3 +22,20 @@ function myCalculator(num1,num2, mycallback){
 };
 
 myCalculator(1050,2024, display);
+
+
+
+//Asynchronus function
+
+async function add(a,b){
+    let result = await a + b;
+    display(result);
+
+    
+};
+
+function display(some){
+     document.getElementById("async").innerHTML = some;
+}
+
+add(1133,2244);
